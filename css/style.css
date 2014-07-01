@@ -1,0 +1,357 @@
+/* @group Base styles */
+/*Easier sizing*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:last-child {
+	margin-bottom: 0 !important;
+}
+
+html {
+	font: 16px/1.33333 "brandon-grotesque", "Brandon Grotesque", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	background-color: #f8f9fa;
+	color: #444b58;
+	text-rendering: optimizeLegibility;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #222732;
+	color: #fff;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 1.25rem; /*20px*/
+	background: url(images/background.jpg) no-repeat left top;
+	background-size: cover;
+}
+
+/*Basic heading styles*/
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 1.2;
+	font-weight: 500;
+	letter-spacing: .3125rem; /*5px*/
+}
+
+h1 {
+	font-size: 3rem;
+	opacity: .5;
+}
+
+h3 {
+	padding-bottom: .625rem; /*10px*/
+	font-size: .875rem;
+	opacity: .35;
+}
+
+strong {
+	font-weight: inherit;
+}
+
+/*Basic link styles*/
+a {
+	text-decoration: none;
+	color: #fff;
+	transition: color .1s ease-out;
+}
+
+	a:hover,
+	a:active,
+	a:focus {
+		color: hsla(100, 100%, 100%, .75);
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	width: 100%;
+	max-width: 100%;
+}
+
+/*Basic navigation styles*/
+nav ul,
+nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0; /*Removing spacing*/
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1rem; /*Setting the font back to normal*/
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p + p {
+	margin-top: .5rem;
+	text-indent: 1.2rem;
+}
+
+ul, ol {
+	list-style-position: outside;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: -1.2em;
+	padding-left: 1.2em;
+}
+
+	ul.row,
+	ol.row {
+		padding-left: 0;
+	}
+
+ul {
+	list-style-type: square;
+}
+
+blockquote {
+	margin-left: 0;
+	position: relative;
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+	blockquote::before {
+		content: "\201F";
+		font-size: 6rem;
+		line-height: 1;
+		position: absolute;
+		left: -1ex;
+		opacity: .2;
+	}
+	
+blockquote footer {
+	margin: 0;
+	padding: 0;
+}
+	
+q::before {
+	content: "\201C";
+}
+
+q::after {
+	content: "\201D";
+}
+	
+p:first-of-type {
+	margin-top: 0;
+}
+
+/*Clearfix*/
+.group:before,
+.group:before,
+.group:after { content: ""; display: table; } 
+.group:after { clear: both; }
+.group { zoom: 1; }
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*Image replacement*/
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+/*Selection color for pages*/
+::selection {
+	color: #fff;
+	background: #4084d0;
+}
+
+	::-moz-selection {
+		color: #fff;
+		background: #4084d0;
+	}
+
+::selection:window-inactive {
+	background: #31649e;
+}
+/* @end */
+
+/* @group Page Styles */
+[itemprop="logo"] {
+	width: 11.25rem; /*180px*/
+	height: 1.4375rem; /*23px*/
+	background-image: url(images/vainila-logo.svg);
+	background-position: left top;
+}
+
+.polygon {
+	width: 9.625rem; /*154px*/
+	height: 9.625rem; /*154px*/
+	position: absolute;
+	left: 50%;
+	margin-left: -4.8125rem; /*77px*/
+	top: 50%;
+	margin-top: -4.8125rem; /*77px*/
+	z-index: 0;
+}
+
+.polygon > span {
+	display: block;
+	width: 9.625rem; /*154px*/
+	height: 9.625rem; /*154px*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid hsla(100, 100%, 100%, .05);
+}
+
+	.polygon > span:nth-child(1) {
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+	
+	.polygon > span:nth-child(2) {
+		-webkit-transform: rotate(300deg);
+		-moz-transform: rotate(300deg);
+		transform: rotate(300deg);
+	}
+	
+	.polygon > span:nth-child(3) {
+		-webkit-transform: rotate(285deg);
+		-moz-transform: rotate(285deg);
+		transform: rotate(285deg);
+	}
+	
+	.polygon > span:nth-child(4) {
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+	
+	.polygon > span:nth-child(5) {
+		-webkit-transform: rotate(255deg);
+		-moz-transform: rotate(255deg);
+		transform: rotate(255deg);
+	}
+	
+	.polygon > span:nth-child(6) {
+		-webkit-transform: rotate(240deg);
+		-moz-transform: rotate(240deg);
+		transform: rotate(240deg);
+	}
+	
+.services {
+	font-weight: 100; /*Light*/
+	font-size: 4.5rem;
+	line-height: 1.4;
+	letter-spacing: .3125rem; /*5px*/
+	padding: 6.25rem 0; /*100px*/
+	position: relative;
+}
+
+/*Services Colors*/
+.services .analyze {
+	color: #FFC48C;
+}
+
+.services .define {
+	color: #F56991;
+}
+
+.services .design {
+	color: #D1F2A5;
+}
+
+.keywords,
+.keywords li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Keywords*/
+.keywords {
+	display: none; /*Test*/
+}
+
+.keywords > li {
+	position: absolute;
+	opacity: .2;
+	font-size: .875rem; /*14px*/
+}
+
+/*Contact Us*/
+footer > a {
+	display: inline-block;
+}
+
+[itemprop="email"] {
+	font-family: "kepler-std-display", "Kepler Std", Georgia, serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.625rem; /*26px*/
+	text-transform: lowercase;
+} 
+
+/*Social Navigation*/
+footer > nav {
+	margin-top: 3.125rem; /*50px*/
+}
+
+.social > li > a {
+	display: inline-block;
+	width: 3.5625rem; /*57px*/
+	height: 3.5625rem; /*57px*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: red;
+}
+
+a[href*="facebook"] {
+	background-image: url(images/facebook.svg);
+}
+
+a[href*="twitter"] {
+	background-image: url(images/twitter.svg);
+}
+/* @end */
+
+/* @group Mobile styles */
+@media screen and (max-width: 600px) {
+	article,
+	.pagination,
+	.main-footer {
+		padding-left: 1.25rem; /*20px*/
+		padding-right: 1.25rem;
+	}
+
+}
+/* @end */
