@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="10px" height="19px" viewBox="0 0 10 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="118px" height="60px" viewBox="0 0 118 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.0.3 (7892) - http://www.bohemiancoding.com/sketch -->
-    <title>f</title>
+    <title>Line 5</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-HD-2" sketch:type="MSArtboardGroup" transform="translate(-687.000000, -683.000000)">
+        <g id="Desktop-HD-2" sketch:type="MSArtboardGroup" transform="translate(-662.000000, -662.000000)">
             <g id="Group-+-Group" sketch:type="MSLayerGroup" transform="translate(618.000000, 690.000000)"></g>
             <path d="M778.00431,691.711492 L749.857863,663.565046 L749.711416,663.418598 L692.062815,721.067201 L691.709261,721.420755 L691.002155,720.713648 L691.00431,720.711492 L691.00431,720.711492 L690.857863,720.565046 L662.857863,692.565046 L662.711416,692.418599 L662.707107,692.422908 L662,691.715801 L662.353553,691.362248 L691.362248,662.353553 L691.715801,662 L691.718187,662.002386 L691.720573,662 L692.075157,662.354584 L718.65682,688.936247 L719.011404,689.290832 L718.302236,690 L717.947652,689.645416 L691.716125,663.41389 L691.716125,663.41389 L663.418523,691.711492 L663.418523,691.711492 L663.56497,691.857939 L691.56497,719.857939 L691.711417,720.004386 L749.377089,662.338711 L749.730643,661.985158 L750.437749,662.692265 L750.418522,662.711492 L750.418522,662.711492 L750.56497,662.857939 L779.069355,691.362324 L779.422908,691.715877 L778.715801,692.422984 L778.711416,692.418599 L778.56497,692.565046 L750.025523,721.104492 L749.67197,721.458045 L749.629839,721.415914 L749.622845,721.422908 L749.269292,721.069355 L722.764982,694.565045 L722.411429,694.211492 L723.118535,693.504385 L723.472089,693.857939 L749.664976,720.050825 L777.857863,691.857939 L778.00431,691.711492 Z" id="Line-5" stroke="#FFFFFF" stroke-linecap="square" opacity="0.2" sketch:type="MSShapeGroup"></path>
-            <path d="M696.225,683.7 C695.25,683.5 694.5,683.35 693.475,683.35 C690.525,683.35 689.35,684.75 689.35,687.25 L689.35,689.075 L687.5,689.075 L687.5,692.025 L689.35,692.025 L689.35,701 L692.95,701 L692.95,692.025 L695.575,692.025 L695.825,689.075 L692.95,689.075 L692.95,687.65 C692.95,686.85 693.025,686.35 694.175,686.35 C694.6,686.35 695.275,686.425 695.775,686.525 L696.225,683.7 Z" id="f" opacity="0.8" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

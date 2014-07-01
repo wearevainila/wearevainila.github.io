@@ -52,7 +52,7 @@ h1 {
 h3 {
 	padding-bottom: .625rem; /*10px*/
 	font-size: .875rem;
-	opacity: .35;
+	color: hsla(100, 100%, 100%, .35);
 }
 
 strong {
@@ -62,14 +62,14 @@ strong {
 /*Basic link styles*/
 a {
 	text-decoration: none;
-	color: #fff;
+	color: hsla(100, 100%, 100%, .75);
 	transition: color .1s ease-out;
 }
 
 	a:hover,
 	a:active,
 	a:focus {
-		color: hsla(100, 100%, 100%, .75);
+		color: #fff;
 	}
 
 img {
@@ -208,6 +208,7 @@ p:first-of-type {
 	height: 1.4375rem; /*23px*/
 	background-image: url(images/vainila-logo.svg);
 	background-position: left top;
+	background-size: cover;
 }
 
 .polygon {
@@ -326,14 +327,46 @@ footer > nav {
 	margin-top: 3.125rem; /*50px*/
 }
 
+.social {
+	background: url(images/social.svg) no-repeat center center;
+	background-size: contain;
+}
+
+.social::before,
+.social::after {
+	content: "";
+	display: inline-block;
+	width: 2.125rem; /*24px*/
+	height: .25rem; /*4px*/
+	background: url(images/dots.svg) no-repeat left top;
+	opacity: .08;
+	position: relative;
+	top: .95rem;
+}
+
+	.social::before {
+		left: -.625rem; /*10px*/
+	}
+	
+	.social::after {
+		right: -.625rem; /*10px*/
+	}
+
 .social > li > a {
 	display: inline-block;
 	width: 3.5625rem; /*57px*/
 	height: 3.5625rem; /*57px*/
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: red;
+	opacity: .7;
+	-webkit-transition: all .22s ease-in-out;
+	transition: all .22s ease-in-out;
 }
+
+	.social > li > a:hover,
+	.social > li > a:focus {
+		opacity: 1;
+	}
 
 a[href*="facebook"] {
 	background-image: url(images/facebook.svg);
@@ -346,12 +379,54 @@ a[href*="twitter"] {
 
 /* @group Mobile styles */
 @media screen and (max-width: 600px) {
-	article,
-	.pagination,
-	.main-footer {
-		padding-left: 1.25rem; /*20px*/
-		padding-right: 1.25rem;
+	body {
+		padding: .625rem; /*10px*/
 	}
 
+	[itemprop="logo"] {
+		width: 5.625rem; /*90px*/
+		height: .6875rem; /*11px*/
+	}
+	
+	.polygon,
+	.polygon > span {
+		width: 4.8125rem; /*154px*/
+		height: 4.8125rem; /*154px*/
+	}
+	
+	.polygon {
+		margin-left: -2.40625rem; /*77px*/
+		margin-top: -2.40625rem; /*77px*/
+	}
+	
+	.services {
+		padding: 3.125rem 0; /*50px*/
+		font-size: 2.25rem; /*30px*/
+	}
+
+	footer > a {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 1.3rem 1.6875rem; /*34px 55px*/
+		border: 2px solid hsla(100, 100%, 100%, .2);
+	}
+	
+	footer > a > h3 {
+		color: hsla(100, 100%, 100%, .75);
+		line-height: 1;
+		padding: 0;
+		font-size: .6875rem; /*11px*/
+		transition: all .12s ease-in-out;
+	}
+	
+		footer > a:hover > h3,
+		footer > a:focus > h3,
+		footer > a:active > h3 {
+			color: #fff;
+		}
+	
+	[itemprop="email"] {
+		display: none;
+	}
 }
 /* @end */
