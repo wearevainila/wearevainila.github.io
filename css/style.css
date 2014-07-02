@@ -716,7 +716,8 @@ p:first-of-type {
 }
 
 .keywords {
-	min-width: 5em;
+	display: inline-block;
+	min-width: 4em;
 }
 
 /*Contact Us*/
