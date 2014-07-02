@@ -715,25 +715,6 @@ p:first-of-type {
 	color: #D1F2A5;
 }
 
-.keywords,
-.keywords li {
-	display: inline-block;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-/*Keywords*/
-.keywords {
-	display: none; /*Test*/
-}
-
-.keywords > li {
-	position: absolute;
-	opacity: .2;
-	font-size: .875rem; /*14px*/
-}
-
 /*Contact Us*/
 footer > a {
 	display: inline-block;
