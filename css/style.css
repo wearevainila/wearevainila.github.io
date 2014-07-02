@@ -715,6 +715,10 @@ p:first-of-type {
 	color: #D1F2A5;
 }
 
+.keywords {
+	min-width: 5em;
+}
+
 /*Contact Us*/
 footer > a {
 	display: inline-block;
