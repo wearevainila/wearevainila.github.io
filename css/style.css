@@ -189,17 +189,13 @@ p:first-of-type {
 /*Selection color for pages*/
 ::selection {
 	color: #fff;
-	background: #4084d0;
+	background: hsla(224, 7%, 33%, 1);
 }
 
 	::-moz-selection {
 		color: #fff;
-		background: #4084d0;
+		background: hsla(224, 7%, 33%, 1);
 	}
-
-::selection:window-inactive {
-	background: #31649e;
-}
 /* @end */
 
 /* @group Page Styles */
@@ -408,7 +404,7 @@ a[href*="twitter"] {
 		display: inline-block;
 		margin: 0 auto;
 		padding: 1.3rem 1.6875rem; /*34px 55px*/
-		border: 2px solid hsla(100, 100%, 100%, .2);
+		border: 1px solid hsla(100, 100%, 100%, .2);
 	}
 	
 	footer > a > h3 {
