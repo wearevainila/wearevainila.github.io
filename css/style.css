@@ -1,3 +1,432 @@
+/* @group Normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* @end */
+
 /* @group Base styles */
 /*Easier sizing*/
 *,
@@ -202,7 +631,7 @@ p:first-of-type {
 [itemprop="logo"] {
 	width: 11.25rem; /*180px*/
 	height: 1.4375rem; /*23px*/
-	background-image: url(images/vainila-logo.svg);
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE4MHB4IiBoZWlnaHQ9IjIzcHgiIHZpZXdCb3g9IjAgMCAxODAgMjMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjAuMyAoNzg5MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+UmVjdGFuZ2xlIDI0NjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgogICAgICAgIDxwYXRoIGQ9Ik0xMC45ODA3NDMxLDE5LjQxMTk4MjggTDE5LjkzMDIyNTgsMC42MTc4NDg5MjggQzIwLjE4OTkwNiwwLjA3MjUxNDA2OTMgMjAuODMxNzkxNywtMC4xNTQwNzAyMzIgMjEuMzYxNTA1MiwwLjExMDU1MzU5OSBDMjEuODkyMjk4NywwLjM3NTcxNjk4NCAyMi4xMTIwNjUsMS4wMzI3ODYwMiAyMS44NTIzOTkyLDEuNTc4MDkwNDkgTDEyLjAxMTQ1ODUsMjIuMjQ0MzA4MyBDMTEuODE1MTM0MSwyMi42NTY1OTQzIDExLjQwMDM1MTksMjIuODg2NjkxNiAxMC45ODA3NDMxLDIyLjg2MDA3NzMgQzEwLjU2MTEzNDQsMjIuODg2NjkxNiAxMC4xNDYzNTIyLDIyLjY1NjU5NDMgOS45NTAwMjc4LDIyLjI0NDMwODMgTDAuMTA5MDg3MDQ2LDEuNTc4MDkwNDkgQy0wLjE1MDU3ODcwMywxLjAzMjc4NjAyIDAuMDY5MTg3NTgzNSwwLjM3NTcxNjk4NCAwLjU5OTk4MTExMywwLjExMDU1MzU5OSBDMS4xMjk2OTQ1OCwtMC4xNTQwNzAyMzIgMS43NzE1ODAyMywwLjA3MjUxNDA2OTMgMi4wMzEyNjA0NSwwLjYxNzg0ODkyOCBMMTAuOTgwNzQzMSwxOS40MTE5ODI4IEwxMC45ODA3NDMxLDE5LjQxMTk4MjggWiBNMTY4Ljg4MTczMywzLjQ1MDE3NDM4IEwxNzcuMTE1MTc0LDIwLjc0MDYwMjQgTDE2OS45NTEyNDYsMjAuNzQwNjAyNCBDMTY5LjM2MDU3LDIwLjc0MDYwMjQgMTY4Ljg4MTczMywyMS4yMzIxODggMTY4Ljg4MTczMywyMS44MzU4NDA1IEMxNjguODgxNzMzLDIyLjQ0MDcyMzggMTY5LjM2MzYyMiwyMi45MzEwNzg2IDE2OS45NTEyNDYsMjIuOTMxMDc4NiBMMTc4Ljg2MTcyNSwyMi45MzEwNzg2IEMxNzkuNDUyNDAxLDIyLjkzMTA3ODYgMTc5LjkzMTIzOCwyMi40Mzk0OTMgMTc5LjkzMTIzOCwyMS44MzU4NDA1IEMxNzkuOTMxMjM4LDIxLjU2ODkzMTUgMTc5LjgzNzQxMSwyMS4zMjQzMjIxIDE3OS42ODIwNzQsMjEuMTM0MzAxOCBMMTc5LjY4MjA3NCwyMS4xMzQzMDE4IEwxNjkuOTEyNDQ5LDAuNjE3ODQ4OTI4IEMxNjkuNzE2MTI0LDAuMjA1NTYyODc0IDE2OS4zMDEzNDIsLTAuMDI0NTM0MzU5MyAxNjguODgxNzMzLDAuMDAyMDc5OTAwNTQgQzE2OC40NjIxMjUsLTAuMDI0NTM0MzU5MyAxNjguMDQ3MzQyLDAuMjA1NTYyODc0IDE2Ny44NTEwMTgsMC42MTc4NDg5MjggTDE1OC4wMTAwNzcsMjEuMjg0MDY2NyBDMTU3Ljc1MDQxMSwyMS44MjkzNzEyIDE1Ny45NzAxNzgsMjIuNDg2NDQwMiAxNTguNTAwOTcxLDIyLjc1MTYwMzYgQzE1OS4wMzA2ODUsMjMuMDE2MjI3NSAxNTkuNjcyNTcsMjIuNzg5NjQzMiAxNTkuOTMyMjUxLDIyLjI0NDMwODMgTDE2OC44ODE3MzMsMy40NTAxNzQzOCBMMTY4Ljg4MTczMywzLjQ1MDE3NDM4IFogTTEzMi44Mzg0MTUsMjIuNjEwNzgxNSBDMTMyLjY0NTA2NywyMi40MTMyNTk5IDEzMi41MjUyOTgsMjIuMTQwNTQ5IDEzMi41MjUyOTgsMjEuODM5MzQ5MyBMMTMyLjUyNTI5OCwxLjM4Nzg4NzI1IEMxMzIuNTI1Mjk4LDAuNzg5OTcwODU2IDEzMy4wMDQwNDMsMC4yOTYxNTc5NzYgMTMzLjU5NDYwNSwwLjI5NjE1Nzk3NiBDMTM0LjE4Mzk2NSwwLjI5NjE1Nzk3NiAxMzQuNjYzOTExLDAuNzg0OTQxODE5IDEzNC42NjM5MTEsMS4zODc4ODcyNSBMMTM0LjY2MzkxMSwyMC43NDA2MDI0IEwxNDUuMzU4NTgyLDIwLjc0MDYwMjQgQzE0NS45NDc3ODQsMjAuNzQwNjAyNCAxNDYuNDI2Mjg4LDIxLjIzMDk1NzIgMTQ2LjQyNjI4OCwyMS44MzU4NDA1IEMxNDYuNDI2Mjg4LDIyLjQzOTQ5MyAxNDUuOTQ4MjYsMjIuOTMxMDc4NiAxNDUuMzU4NTgyLDIyLjkzMTA3ODYgTDEzMy41OTMwMDMsMjIuOTMxMDc4NiBDMTMzLjI5ODk3MiwyMi45MzEwNzg2IDEzMy4wMzI1MDgsMjIuODA4OTYzNCAxMzIuODM5MzIxLDIyLjYxMTQzOTQgTDEzMi44Mzg0MTUsMjIuNjEwNzgxNSBMMTMyLjgzODQxNSwyMi42MTA3ODE1IFogTTMyLjMzMTQ2MDksMjAuNzQwNjAyNCBMMzkuNDk1Mzg4OCwyMC43NDA2MDI0IEM0MC4wODMwMTMyLDIwLjc0MDYwMjQgNDAuNTY0OTAxNiwyMS4yMzA5NTcyIDQwLjU2NDkwMTYsMjEuODM1ODQwNSBDNDAuNTY0OTAxNiwyMi40Mzk0OTMgNDAuMDg2MDY0NCwyMi45MzEwNzg2IDM5LjQ5NTM4ODgsMjIuOTMxMDc4NiBMMzAuNTg0OTA5NCwyMi45MzEwNzg2IEMyOS45OTcyODUsMjIuOTMxMDc4NiAyOS41MTUzOTY2LDIyLjQ0MDcyMzggMjkuNTE1Mzk2NiwyMS44MzU4NDA1IEMyOS41MTUzOTY2LDIxLjU2ODQ0MTEgMjkuNjA5MzU0OCwyMS4zMjMwMzE3IDI5Ljc2NTM3MTYsMjEuMTMyNiBMMzkuNTM0MTg2MiwwLjYxNzg0ODkyOCBDMzkuNzMwNTEwNiwwLjIwNTU2Mjg3NCA0MC4xNDUyOTI4LC0wLjAyNDUzNDM1OTMgNDAuNTY0OTAxNiwwLjAwMjA3OTkwMDU0IEM0MC45ODQ1MTAzLC0wLjAyNDUzNDM1OTMgNDEuMzk5MjkyNSwwLjIwNTU2Mjg3NCA0MS41OTU2MTY5LDAuNjE3ODQ4OTI4IEw1MS40MzY1NTc2LDIxLjI4NDA2NjcgQzUxLjY5NjIyMzQsMjEuODI5MzcxMiA1MS40NzY0NTcxLDIyLjQ4NjQ0MDIgNTAuOTQ1NjYzNiwyMi43NTE2MDM2IEM1MC40MTU5NTAxLDIzLjAxNjIyNzUgNDkuNzc0MDY0NSwyMi43ODk2NDMyIDQ5LjUxNDM4NDIsMjIuMjQ0MzA4MyBMNDAuNTY0OTAxNiwzLjQ1MDE3NDM4IEwzMi4zMzE0NjA5LDIwLjc0MDYwMjQgTDMyLjMzMTQ2MDksMjAuNzQwNjAyNCBaIE04NC4wNTAwNTAxLDQuMzM3MjU5NDYgTDg0LjA1MDA1MDEsMjEuODM5MzQ5MyBDODQuMDUwMDUwMSwyMi40MzcyNjU3IDgzLjU3MTMwNSwyMi45MzEwNzg2IDgyLjk4MDc0MzEsMjIuOTMxMDc4NiBDODIuMzkxMzgyOSwyMi45MzEwNzg2IDgxLjkxMTQzNjIsMjIuNDQyMjk0OCA4MS45MTE0MzYyLDIxLjgzOTM0OTMgTDgxLjkxMTQzNjIsMS4zODc4ODcyNSBDODEuOTExNDM2MiwwLjc4OTk3MDg1NiA4Mi4zOTAxODEyLDAuMjk2MTU3OTc2IDgyLjk4MDc0MzEsMC4yOTYxNTc5NzYgQzgzLjAyODQzOTksMC4yOTYxNTc5NzYgODMuMDc1NDIwMSwwLjI5OTM1OTMyOSA4My4xMjE0ODczLDAuMzA1NTYzNDYyIEM4My40MjcxOTcsMC4zMTEzNzU5NSA4My43Mjg5MzY1LDAuNDUwMzk5NzQzIDgzLjkzNjc1MTEsMC43MTMyNTI3OTMgTDk4LjMwNzQ3NTgsMTguODg5OTc3MSBMOTguMzA3NDc1OCwxLjM4Nzg4NzI1IEM5OC4zMDc0NzU4LDAuNzg5OTcwODU2IDk4Ljc4NjIyMDgsMC4yOTYxNTc5NzYgOTkuMzc2NzgyNywwLjI5NjE1Nzk3NiBDOTkuOTY2MTQzLDAuMjk2MTU3OTc2IDEwMC40NDYwOSwwLjc4NDk0MTgxOSAxMDAuNDQ2MDksMS4zODc4ODcyNSBMMTAwLjQ0NjA5LDIxLjgzOTM0OTMgQzEwMC40NDYwOSwyMi40MzcyNjU3IDk5Ljk2NzM0NDcsMjIuOTMxMDc4NiA5OS4zNzY3ODI3LDIyLjkzMTA3ODYgQzk5LjMyOTA4NTksMjIuOTMxMDc4NiA5OS4yODIxMDU4LDIyLjkyNzg3NzMgOTkuMjM2MDM4NiwyMi45MjE2NzMxIEM5OC45MzAzMjg5LDIyLjkxNTg2MDYgOTguNjI4NTg5NCwyMi43NzY4MzY4IDk4LjQyMDc3NDgsMjIuNTEzOTgzOCBMODQuMDUwMDUwMSw0LjMzNzI1OTQ2IEw4NC4wNTAwNTAxLDQuMzM3MjU5NDYgWiBNNjUuODcxODMyMiwwLjI5NjE1Nzk3NiBDNjUuMjgxMjcwMywwLjI5NjE1Nzk3NiA2NC44MDI1MjUzLDAuNzg5OTcwODU2IDY0LjgwMjUyNTMsMS4zODc4ODcyNSBMNjQuODAyNTI1MywyMS44MzkzNDkzIEM2NC44MDI1MjUzLDIyLjQ0MjI5NDggNjUuMjgyNDcyLDIyLjkzMTA3ODYgNjUuODcxODMyMiwyMi45MzEwNzg2IEM2Ni40NjIzOTQyLDIyLjkzMTA3ODYgNjYuOTQxMTM5MiwyMi40MzcyNjU3IDY2Ljk0MTEzOTIsMjEuODM5MzQ5MyBMNjYuOTQxMTM5MiwxLjM4Nzg4NzI1IEM2Ni45NDExMzkyLDAuNzg0OTQxODE5IDY2LjQ2MTE5MjUsMC4yOTYxNTc5NzYgNjUuODcxODMyMiwwLjI5NjE1Nzk3NiBMNjUuODcxODMyMiwwLjI5NjE1Nzk3NiBMNjUuODcxODMyMiwwLjI5NjE1Nzk3NiBaIE0xMTYuNDg1Njk0LDAuMjk2MTU3OTc2IEMxMTUuODk1MTMyLDAuMjk2MTU3OTc2IDExNS40MTYzODcsMC43ODk5NzA4NTYgMTE1LjQxNjM4NywxLjM4Nzg4NzI1IEwxMTUuNDE2Mzg3LDIxLjgzOTM0OTMgQzExNS40MTYzODcsMjIuNDQyMjk0OCAxMTUuODk2MzMzLDIyLjkzMTA3ODYgMTE2LjQ4NTY5NCwyMi45MzEwNzg2IEMxMTcuMDc2MjU2LDIyLjkzMTA3ODYgMTE3LjU1NTAwMSwyMi40MzcyNjU3IDExNy41NTUwMDEsMjEuODM5MzQ5MyBMMTE3LjU1NTAwMSwxLjM4Nzg4NzI1IEMxMTcuNTU1MDAxLDAuNzg0OTQxODE5IDExNy4wNzUwNTQsMC4yOTYxNTc5NzYgMTE2LjQ4NTY5NCwwLjI5NjE1Nzk3NiBMMTE2LjQ4NTY5NCwwLjI5NjE1Nzk3NiBMMTE2LjQ4NTY5NCwwLjI5NjE1Nzk3NiBaIiBpZD0iUmVjdGFuZ2xlLTI0NiIgZmlsbD0iI0ZGRkZGRiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=);
 	background-position: left top;
 	background-size: cover;
 }
