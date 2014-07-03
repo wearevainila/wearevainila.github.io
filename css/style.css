@@ -718,6 +718,23 @@ p:first-of-type {
 .keywords {
 	display: inline-block;
 	min-width: 4em;
+	overflow: hidden;
+	position: relative;
+}
+
+.keywords > strong {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transform: translateY(-2rem);
+	-webkit-transition: -webkit-transform .5s ease-in-out, opacity .5s ease-in-out;
+	width: 0;
+}
+
+.keywords > strong.active {
+	display: inline-block;
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	width: auto;
 }
 
 /*Contact Us*/
@@ -814,6 +831,10 @@ a[href*="twitter"] {
 	.services {
 		padding: 3.125rem 0; /*50px*/
 		font-size: 2.25rem; /*30px*/
+	}
+	
+	.ideas {
+		display: block;
 	}
 
 	footer > a {
