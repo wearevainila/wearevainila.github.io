@@ -3,5 +3,5 @@ $(function() {
 	setInterval(function(){
 		$keywords.removeClass('active');
 		$keywords.eq(counter++ % $keywords.length).addClass('active');	
-	}, 6000);
+	}, 4000);
 });
