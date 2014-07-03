@@ -726,7 +726,7 @@ p:first-of-type {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transform: translateY(-2rem);
-	-webkit-transition: -webkit-transform .5s ease-in-out, opacity .5s ease-in-out;
+	-webkit-transition: -webkit-transform .5s cubic-bezier(0.780, 0.010, 0.350, 1.260), opacity .5s ease-in-out;
 	width: 0;
 }
 
