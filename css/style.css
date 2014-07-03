@@ -724,16 +724,22 @@ p:first-of-type {
 
 .keywords > strong {
 	display: inline-block;
+	line-height: 1;
 	opacity: 0;
 	-webkit-transform: translateY(-2rem);
 	-webkit-transition: -webkit-transform .5s cubic-bezier(0.780, 0.010, 0.350, 1.260), opacity .5s ease-in-out;
+	-moz-transform: translateY(-2rem);
+	-moz-transition: -moz-transform .5s cubic-bezier(0.780, 0.010, 0.350, 1.260), opacity .5s ease-in-out;
+	transform: translateY(-2rem);
+	transition: transform .5s cubic-bezier(0.780, 0.010, 0.350, 1.260), opacity .5s ease-in-out;
 	width: 0;
 }
 
 .keywords > strong.active {
-	display: inline-block;
 	opacity: 1;
 	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
 	width: auto;
 }
 
