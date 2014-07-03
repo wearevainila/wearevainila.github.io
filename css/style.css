@@ -719,7 +719,7 @@ p:first-of-type {
 	display: inline-block;
 	min-width: 4em;
 	overflow: hidden;
-	position: relative;
+	vertical-align: bottom; /*Fix for overflow:hidden changing the alignment*/
 }
 
 .keywords > strong {
